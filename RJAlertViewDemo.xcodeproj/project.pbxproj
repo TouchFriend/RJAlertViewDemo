@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97187949EB248CA2DC085448 /* Pods_RJAlertViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E527CC2319A59EE86FB15DC2 /* Pods_RJAlertViewDemo.framework */; };
+		BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524B7256CDF42005E02C4 /* AppDelegate.m */; };
+		BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524BD256CDF42005E02C4 /* ViewController.m */; };
+		BF3524C1256CDF42005E02C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3524BF256CDF42005E02C4 /* Main.storyboard */; };
+		BF3524C3256CDF43005E02C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3524C2256CDF43005E02C4 /* Assets.xcassets */; };
+		BF3524C6256CDF43005E02C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3524C4256CDF43005E02C4 /* LaunchScreen.storyboard */; };
+		BF3524C9256CDF43005E02C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524C8256CDF43005E02C4 /* main.m */; };
+		BF3524F6256CE093005E02C4 /* RJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524F5256CE093005E02C4 /* RJMainViewController.m */; };
+		BF60E5162574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5152574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m */; };
+		BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E51B2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m */; };
+		BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E52A2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m */; };
+		BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5302574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m */; };
+		BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */; };
+		BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */; };
+		BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */; };
+		BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */; };
+		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6EC19876DFD0ED44071BBD0C /* Pods-RJAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJAlertViewDemo.release.xcconfig"; path = "Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BE5836C050B9D245E175D5D8 /* Pods-RJAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJAlertViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3524B3256CDF42005E02C4 /* RJAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3524B6256CDF42005E02C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF3524B7256CDF42005E02C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF3524BC256CDF42005E02C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF3524BD256CDF42005E02C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF3524C0256CDF42005E02C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF3524C2256CDF43005E02C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF3524C5256CDF43005E02C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF3524C7256CDF43005E02C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3524C8256CDF43005E02C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF3524F4256CE093005E02C4 /* RJMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMainViewController.h; sourceTree = "<group>"; };
+		BF3524F5256CE093005E02C4 /* RJMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMainViewController.m; sourceTree = "<group>"; };
+		BF60E5142574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerInterfaceActionGroupView.h; sourceTree = "<group>"; };
+		BF60E5152574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerInterfaceActionGroupView.m; sourceTree = "<group>"; };
+		BF60E51A2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJInterfaceActionGroupHeaderScrollView.h; sourceTree = "<group>"; };
+		BF60E51B2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJInterfaceActionGroupHeaderScrollView.m; sourceTree = "<group>"; };
+		BF60E5292574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJInterfaceActionRepresentationsSequenceView.h; sourceTree = "<group>"; };
+		BF60E52A2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJInterfaceActionRepresentationsSequenceView.m; sourceTree = "<group>"; };
+		BF60E52F2574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJInterfaceActionSeparatableSequenceView.h; sourceTree = "<group>"; };
+		BF60E5302574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJInterfaceActionSeparatableSequenceView.m; sourceTree = "<group>"; };
+		BF60E5352574E6B000E4F0A7 /* RJAlertControllerActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionView.h; sourceTree = "<group>"; };
+		BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionView.m; sourceTree = "<group>"; };
+		BF60E53B2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJInterfaceActionVibrantSeparatorView.h; sourceTree = "<group>"; };
+		BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJInterfaceActionVibrantSeparatorView.m; sourceTree = "<group>"; };
+		BF9F22012570A6F100DD3F19 /* RJAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewController.h; sourceTree = "<group>"; };
+		BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertViewController.m; sourceTree = "<group>"; };
+		BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJStackViewDemoViewController.h; sourceTree = "<group>"; };
+		BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJStackViewDemoViewController.m; sourceTree = "<group>"; };
+		BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertDemoViewController.h; sourceTree = "<group>"; };
+		BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertDemoViewController.m; sourceTree = "<group>"; };
+		CD96C178E13A4B363E67E7A8 /* Pods-RJiPhoneXAdaptDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJiPhoneXAdaptDemo.release.xcconfig"; path = "Target Support Files/Pods-RJiPhoneXAdaptDemo/Pods-RJiPhoneXAdaptDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E527CC2319A59EE86FB15DC2 /* Pods_RJAlertViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJAlertViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B5EFE4F4433A9106D19EE0 /* Pods-RJiPhoneXAdaptDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJiPhoneXAdaptDemo.debug.xcconfig"; path = "Target Support Files/Pods-RJiPhoneXAdaptDemo/Pods-RJiPhoneXAdaptDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF3524B0256CDF42005E02C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97187949EB248CA2DC085448 /* Pods_RJAlertViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ACC4E1F0EFF0F18DA1045D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3B5EFE4F4433A9106D19EE0 /* Pods-RJiPhoneXAdaptDemo.debug.xcconfig */,
+				CD96C178E13A4B363E67E7A8 /* Pods-RJiPhoneXAdaptDemo.release.xcconfig */,
+				BE5836C050B9D245E175D5D8 /* Pods-RJAlertViewDemo.debug.xcconfig */,
+				6EC19876DFD0ED44071BBD0C /* Pods-RJAlertViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF3524AA256CDF42005E02C4 = {
+			isa = PBXGroup;
+			children = (
+				BF3524B5256CDF42005E02C4 /* RJAlertViewDemo */,
+				BF3524B4256CDF42005E02C4 /* Products */,
+				9ACC4E1F0EFF0F18DA1045D3 /* Pods */,
+				D280D08548937AE9C2374642 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF3524B4256CDF42005E02C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF3524B3256CDF42005E02C4 /* RJAlertViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3524B5256CDF42005E02C4 /* RJAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F22002570A6D600DD3F19 /* AlertViewController */,
+				BF3524FA256CE098005E02C4 /* ViewControllers */,
+				BF3524B6256CDF42005E02C4 /* AppDelegate.h */,
+				BF3524B7256CDF42005E02C4 /* AppDelegate.m */,
+				BF3524BC256CDF42005E02C4 /* ViewController.h */,
+				BF3524BD256CDF42005E02C4 /* ViewController.m */,
+				BF3524BF256CDF42005E02C4 /* Main.storyboard */,
+				BF3524C2256CDF43005E02C4 /* Assets.xcassets */,
+				BF3524C4256CDF43005E02C4 /* LaunchScreen.storyboard */,
+				BF3524C7256CDF43005E02C4 /* Info.plist */,
+				BF3524C8256CDF43005E02C4 /* main.m */,
+			);
+			path = RJAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		BF3524FA256CE098005E02C4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */,
+				BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */,
+				BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */,
+				BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */,
+				BF3524F4256CE093005E02C4 /* RJMainViewController.h */,
+				BF3524F5256CE093005E02C4 /* RJMainViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF60E5412574E6CF00E4F0A7 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				BF60E5292574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.h */,
+				BF60E52A2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m */,
+				BF60E52F2574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.h */,
+				BF60E5302574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m */,
+				BF60E5352574E6B000E4F0A7 /* RJAlertControllerActionView.h */,
+				BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */,
+				BF60E53B2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.h */,
+				BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		BF60E5422574E6DA00E4F0A7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				BF60E51A2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.h */,
+				BF60E51B2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		BF9F22002570A6D600DD3F19 /* AlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F22012570A6F100DD3F19 /* RJAlertViewController.h */,
+				BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */,
+				BF60E5142574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.h */,
+				BF60E5152574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m */,
+				BF60E5422574E6DA00E4F0A7 /* Header */,
+				BF60E5412574E6CF00E4F0A7 /* Action */,
+			);
+			path = AlertViewController;
+			sourceTree = "<group>";
+		};
+		D280D08548937AE9C2374642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E527CC2319A59EE86FB15DC2 /* Pods_RJAlertViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF3524B2256CDF42005E02C4 /* RJAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3524E2256CDF43005E02C4 /* Build configuration list for PBXNativeTarget "RJAlertViewDemo" */;
+			buildPhases = (
+				4756AD999EDEC636C91071BE /* [CP] Check Pods Manifest.lock */,
+				BF3524AF256CDF42005E02C4 /* Sources */,
+				BF3524B0256CDF42005E02C4 /* Frameworks */,
+				BF3524B1256CDF42005E02C4 /* Resources */,
+				2666C48771DE0A0EF33627B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RJAlertViewDemo;
+			productName = RJiPhoneXAdaptDemo;
+			productReference = BF3524B3256CDF42005E02C4 /* RJAlertViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF3524AB256CDF42005E02C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RJ;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = RJSoft;
+				TargetAttributes = {
+					BF3524B2256CDF42005E02C4 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = BF3524AE256CDF42005E02C4 /* Build configuration list for PBXProject "RJAlertViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF3524AA256CDF42005E02C4;
+			productRefGroup = BF3524B4256CDF42005E02C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF3524B2256CDF42005E02C4 /* RJAlertViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF3524B1256CDF42005E02C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3524C6256CDF43005E02C4 /* LaunchScreen.storyboard in Resources */,
+				BF3524C3256CDF43005E02C4 /* Assets.xcassets in Resources */,
+				BF3524C1256CDF42005E02C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2666C48771DE0A0EF33627B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4756AD999EDEC636C91071BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RJAlertViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF3524AF256CDF42005E02C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */,
+				BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */,
+				BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */,
+				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,
+				BF3524F6256CE093005E02C4 /* RJMainViewController.m in Sources */,
+				BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */,
+				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,
+				BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */,
+				BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */,
+				BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */,
+				BF60E5162574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m in Sources */,
+				BF3524C9256CDF43005E02C4 /* main.m in Sources */,
+				BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF3524BF256CDF42005E02C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3524C0256CDF42005E02C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF3524C4256CDF43005E02C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF3524C5256CDF43005E02C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF3524E0256CDF43005E02C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF3524E1256CDF43005E02C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF3524E3256CDF43005E02C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5836C050B9D245E175D5D8 /* Pods-RJAlertViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJ2G45B9KH;
+				INFOPLIST_FILE = RJAlertViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RJSoftware.RJAlertViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF3524E4256CDF43005E02C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EC19876DFD0ED44071BBD0C /* Pods-RJAlertViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJ2G45B9KH;
+				INFOPLIST_FILE = RJAlertViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RJSoftware.RJAlertViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF3524AE256CDF42005E02C4 /* Build configuration list for PBXProject "RJAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3524E0256CDF43005E02C4 /* Debug */,
+				BF3524E1256CDF43005E02C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3524E2256CDF43005E02C4 /* Build configuration list for PBXNativeTarget "RJAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3524E3256CDF43005E02C4 /* Debug */,
+				BF3524E4256CDF43005E02C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF3524AB256CDF42005E02C4 /* Project object */;
+}

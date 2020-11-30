@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  AppDelegate.h
 //  RJiPhoneXAdaptDemo
 //
 //  Created by TouchWorld on 2020/11/24.
@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow * window;
 
