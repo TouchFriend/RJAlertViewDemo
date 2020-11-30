@@ -7,15 +7,34 @@
 //
 
 #import "RJInterfaceActionRepresentationsSequenceView.h"
+#import "RJInterfaceActionSeparatableSequenceView.h"
+#import <Masonry/Masonry.h>
 
 @implementation RJInterfaceActionRepresentationsSequenceView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupInit];
+    }
+        
+    return self;
 }
-*/
+
+#pragma mark - Setup Init
+
+- (void)setupInit {
+    self.bounces = NO;
+    self.showsHorizontalScrollIndicator = NO;
+    
+    RJInterfaceActionSeparatableSequenceView *sequenceView = [[RJInterfaceActionSeparatableSequenceView alloc] init];
+    [self addSubview:sequenceView];
+    [sequenceView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+        make.width.mas_equalTo(self);
+        make.height.mas_equalTo(self);
+    }];
+    sequenceView.backgroundColor = [UIColor purpleColor];
+}
 
 @end
