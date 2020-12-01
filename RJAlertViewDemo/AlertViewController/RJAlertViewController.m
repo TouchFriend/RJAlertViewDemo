@@ -25,7 +25,7 @@
     [self.view addSubview:actionGroupView];
     [actionGroupView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(self.view);
-        make.size.mas_equalTo(CGSizeMake(270.0, 300.0));
+        make.width.mas_equalTo(270.0);
     }];
     actionGroupView.backgroundColor = [UIColor orangeColor];
     

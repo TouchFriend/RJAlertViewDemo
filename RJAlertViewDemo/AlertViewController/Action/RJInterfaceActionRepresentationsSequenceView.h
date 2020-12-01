@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class RJAlertControllerActionItem;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RJInterfaceActionRepresentationsSequenceView : UIScrollView
+
+/// 操作数据
+@property (nonatomic, strong) NSArray<RJAlertControllerActionItem *> *actionItems;
+
+- (instancetype)initWithActionItems:(NSArray *)actionItems;
 
 @end
 
