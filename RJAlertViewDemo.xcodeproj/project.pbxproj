@@ -21,6 +21,7 @@
 		BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5302574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m */; };
 		BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */; };
 		BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */; };
+		BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF879A6225778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m */; };
 		BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */; };
 		BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */; };
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
@@ -56,6 +57,8 @@
 		BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionView.m; sourceTree = "<group>"; };
 		BF60E53B2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJInterfaceActionVibrantSeparatorView.h; sourceTree = "<group>"; };
 		BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJInterfaceActionVibrantSeparatorView.m; sourceTree = "<group>"; };
+		BF879A6125778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RJAlertViewControllerAdd.h"; sourceTree = "<group>"; };
+		BF879A6225778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RJAlertViewControllerAdd.m"; sourceTree = "<group>"; };
 		BF9F22012570A6F100DD3F19 /* RJAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewController.h; sourceTree = "<group>"; };
 		BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertViewController.m; sourceTree = "<group>"; };
 		BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJStackViewDemoViewController.h; sourceTree = "<group>"; };
@@ -176,6 +179,15 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		BF879A5B25778D90008BDDCF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF879A6125778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.h */,
+				BF879A6225778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		BF9F22002570A6D600DD3F19 /* AlertViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +198,7 @@
 				BF60E5152574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m */,
 				BF60E5422574E6DA00E4F0A7 /* Header */,
 				BF60E5412574E6CF00E4F0A7 /* Action */,
+				BF879A5B25778D90008BDDCF /* UIKit */,
 			);
 			path = AlertViewController;
 			sourceTree = "<group>";
@@ -322,6 +335,7 @@
 				BF3524F6256CE093005E02C4 /* RJMainViewController.m in Sources */,
 				BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */,
 				BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */,
+				BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */,
 				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,
 				BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */,
 				BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */,

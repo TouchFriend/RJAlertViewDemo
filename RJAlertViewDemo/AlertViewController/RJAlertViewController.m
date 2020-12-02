@@ -26,7 +26,7 @@
     [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
-    bgView.backgroundColor = RJGrayColorAlpha(97, 0.23);
+    bgView.backgroundColor = RJGrayColorAlpha(0.0, 0.2);
     
     RJAlertControllerInterfaceActionGroupView *actionGroupView = [[RJAlertControllerInterfaceActionGroupView alloc] init];
     [self.view addSubview:actionGroupView];

@@ -36,6 +36,9 @@
     self.backgroundColor = [UIColor clearColor];
     self.bounces = NO;
     self.showsHorizontalScrollIndicator = NO;
+    self.layer.masksToBounds = YES;
+//    self.clipsToBounds = YES;
+    
     CGFloat contentHeight = [self calculateContentHeight];
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(contentHeight);

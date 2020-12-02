@@ -35,21 +35,14 @@
 #pragma mark - Setup Init
 
 - (void)setupInit {
-    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor whiteColor];
+    self.layer.cornerRadius = 10.0;
+    self.layer.masksToBounds = YES;
     
     RJAlertControllerActionItem *item1 = [[RJAlertControllerActionItem alloc] init];
     RJAlertControllerActionItem *item2 = [[RJAlertControllerActionItem alloc] init];
     RJAlertControllerActionItem *item3 = [[RJAlertControllerActionItem alloc] init];
     self.actionItems = @[item1, item2, item3];
-    
-    UIView *bgView = [[UIView alloc] init];
-    [self addSubview:bgView];
-    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self);
-    }];
-    bgView.backgroundColor = [UIColor whiteColor];
-    bgView.layer.cornerRadius = 10.0;
-    bgView.layer.masksToBounds = YES;
     
     [self setupContentView];
 }
