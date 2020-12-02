@@ -38,7 +38,7 @@
     RJAlertControllerActionItem *item3 = [[RJAlertControllerActionItem alloc] init];
     self.actionItems = @[item1, item2, item3];
     
-    RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:@"" message:@"message"];
+    RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:@"title" message:@"message"];
     [self addSubview:headerView];
     [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(self);

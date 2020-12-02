@@ -10,6 +10,7 @@
 #import "RJAlertDemoViewController.h"
 #import "RJStackViewDemoViewController.h"
 #import "RJAlertViewController.h"
+#import "RJMultipViewConstraintViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    RJAlertDemoViewController *vc = [[RJAlertDemoViewController alloc] init];
-//    RJAlertViewController *vc = [[RJAlertViewController alloc] init];
+//    RJAlertDemoViewController *vc = [[RJAlertDemoViewController alloc] init];
+    RJAlertViewController *vc = [[RJAlertViewController alloc] init];
+//    RJMultipViewConstraintViewController *vc = [[RJMultipViewConstraintViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];

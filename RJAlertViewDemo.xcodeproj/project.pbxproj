@@ -26,6 +26,7 @@
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
 		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
 		BFF424EF2575D76900DA3359 /* RJAlertControllerActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */; };
+		BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		BFF424ED2575D76900DA3359 /* RJAlertControllerActionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionItem.h; sourceTree = "<group>"; };
 		BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionItem.m; sourceTree = "<group>"; };
 		BFF424F22575E74F00DA3359 /* RJAlertViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewConst.h; sourceTree = "<group>"; };
+		BFF8E02625772FB300CEE91A /* RJMultipViewConstraintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMultipViewConstraintViewController.h; sourceTree = "<group>"; };
+		BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMultipViewConstraintViewController.m; sourceTree = "<group>"; };
 		CD96C178E13A4B363E67E7A8 /* Pods-RJiPhoneXAdaptDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJiPhoneXAdaptDemo.release.xcconfig"; path = "Target Support Files/Pods-RJiPhoneXAdaptDemo/Pods-RJiPhoneXAdaptDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E527CC2319A59EE86FB15DC2 /* Pods_RJAlertViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJAlertViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B5EFE4F4433A9106D19EE0 /* Pods-RJiPhoneXAdaptDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJiPhoneXAdaptDemo.debug.xcconfig"; path = "Target Support Files/Pods-RJiPhoneXAdaptDemo/Pods-RJiPhoneXAdaptDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */,
 				BF3524F4256CE093005E02C4 /* RJMainViewController.h */,
 				BF3524F5256CE093005E02C4 /* RJMainViewController.m */,
+				BFF8E02625772FB300CEE91A /* RJMultipViewConstraintViewController.h */,
+				BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */,
 				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,
 				BF3524F6256CE093005E02C4 /* RJMainViewController.m in Sources */,
+				BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */,
 				BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */,
 				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,
 				BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */,
