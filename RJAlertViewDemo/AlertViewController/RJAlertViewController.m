@@ -9,6 +9,7 @@
 #import "RJAlertViewController.h"
 #import "RJAlertControllerInterfaceActionGroupView.h"
 #import <Masonry/Masonry.h>
+#import "RJAlertViewConst.h"
 
 @interface RJAlertViewController ()
 
@@ -20,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    UIView *bgView = [[UIView alloc] init];
+    [self.view addSubview:bgView];
+    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+    bgView.backgroundColor = RJGrayColorAlpha(97, 0.23);
     
     RJAlertControllerInterfaceActionGroupView *actionGroupView = [[RJAlertControllerInterfaceActionGroupView alloc] init];
     [self.view addSubview:actionGroupView];

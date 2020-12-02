@@ -35,37 +35,56 @@
 #pragma mark - Setup Init
 
 - (void)setupInit {
-    self.backgroundColor = [UIColor orangeColor];
+    self.backgroundColor = [UIColor clearColor];
     
     RJAlertControllerActionItem *item1 = [[RJAlertControllerActionItem alloc] init];
     RJAlertControllerActionItem *item2 = [[RJAlertControllerActionItem alloc] init];
     RJAlertControllerActionItem *item3 = [[RJAlertControllerActionItem alloc] init];
     self.actionItems = @[item1, item2, item3];
     
+    UIView *bgView = [[UIView alloc] init];
+    [self addSubview:bgView];
+    [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+    }];
+    bgView.backgroundColor = [UIColor whiteColor];
+    bgView.layer.cornerRadius = 10.0;
+    bgView.layer.masksToBounds = YES;
+    
+    [self setupContentView];
+}
+
+- (void)setupContentView {
+    UIView *contentView = [[UIView alloc] init];
+    [self addSubview:contentView];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self);
+    }];
+    
     RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:@"title" message:@"message"];
-    [self addSubview:headerView];
+    [contentView addSubview:headerView];
     [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.mas_equalTo(self);
+        make.top.left.right.mas_equalTo(contentView);
     }];
     
     if (self.actionItems.count > 0) {
         RJInterfaceActionVibrantSeparatorView *separatorView = [[RJInterfaceActionVibrantSeparatorView alloc] init];
-        [self addSubview:separatorView];
+        [contentView addSubview:separatorView];
         [separatorView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(headerView.mas_bottom);
-            make.left.right.mas_equalTo(self);
+            make.left.right.mas_equalTo(contentView);
             make.height.mas_equalTo(RJAlertControllerSeparatorViewDefaultHeight);
         }];
         
         RJInterfaceActionRepresentationsSequenceView *actionView = [[RJInterfaceActionRepresentationsSequenceView alloc] initWithActionItems:self.actionItems];
-        [self addSubview:actionView];
+        [contentView addSubview:actionView];
         [actionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(separatorView.mas_bottom);
-            make.left.right.bottom.mas_equalTo(self);
+            make.left.right.bottom.mas_equalTo(contentView);
         }];
     } else {
         [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(self.mas_bottom).mas_offset(-24.0);
+            make.bottom.mas_equalTo(contentView.mas_bottom);
         }];
     }
 }

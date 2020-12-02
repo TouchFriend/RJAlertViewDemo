@@ -44,7 +44,7 @@
 #pragma mark - Setup Init
 
 - (void)setupInit {
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor clearColor];
     self.vertical = self.actionViews.count > 2;
     
     UIStackView *stackView = [[UIStackView alloc] initWithArrangedSubviews:self.arrangedSubviews];
@@ -78,7 +78,7 @@
         NSMutableArray *actions = [NSMutableArray array];
         for (RJAlertControllerActionItem *item in self.actionItems) {
             RJAlertControllerActionView *actionView = [[RJAlertControllerActionView alloc] init];
-            actionView.backgroundColor = RJRandomColor;
+//            actionView.backgroundColor = RJRandomColor;
             [actions addObject:actionView];
         }
         _actionViews = [actions copy];

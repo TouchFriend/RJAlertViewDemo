@@ -85,15 +85,15 @@
     [alertController addAction:cancelAction];
     [alertController addAction:confirmAction];
     [alertController addAction:testAction];
-    [alertController addAction:testAction1];
-    [alertController addAction:testAction2];
-    [alertController addAction:testAction3];
-    [alertController addAction:testAction4];
-    [alertController addAction:testAction5];
+//    [alertController addAction:testAction1];
+//    [alertController addAction:testAction2];
+//    [alertController addAction:testAction3];
+//    [alertController addAction:testAction4];
+//    [alertController addAction:testAction5];
     
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.text = @"test1";
-    }];
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+//        textField.text = @"test1";
+//    }];
 //    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
 //        textField.text = @"test2";
 //    }];
