@@ -20,6 +20,8 @@
 @property (nonatomic, strong) UILabel *titleLbl;
 /// 描述
 @property (nonatomic, strong) UILabel *messageLbl;
+/// 容器
+@property (nonatomic, strong) UIView *containerView;
 
 
 @end
@@ -39,6 +41,8 @@
 #pragma mark - Setup Init
 
 - (void)setupInit {
+    self.backgroundColor = [UIColor clearColor];
+    
     UIView *contentView = [[UIView alloc] init];
     [self addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -47,12 +51,12 @@
     }];
     
     UIView *lastView = contentView;
-    CGFloat firstViewTop = 30.0;
+    CGFloat firstViewTop = 19.67;
     if (self.title && self.title.length > 0) {
         [contentView addSubview:self.titleLbl];
         self.titleLbl.text = self.title;
         [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.mas_equalTo(contentView).mas_offset(firstViewTop);
+            [self addTopConstraint:make lastView:lastView flag:lastView != contentView top:firstViewTop];
             make.centerX.mas_equalTo(contentView);
             make.width.mas_equalTo(contentView).mas_offset(-32.0);
             make.height.mas_equalTo(20.3333);
@@ -60,7 +64,7 @@
         lastView = self.titleLbl;
     }
     if (self.message && self.message.length > 0) {
-        CGFloat CGFloatTop = lastView != contentView ? 10.0 : firstViewTop;
+        CGFloat CGFloatTop = lastView != contentView ? 3.67 : firstViewTop;
         [contentView addSubview:self.messageLbl];
         self.messageLbl.text = self.message;
         [self.messageLbl mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -74,7 +78,7 @@
     
     if (lastView != contentView) {
         [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(lastView.mas_bottom).mas_offset(20.0);
+            make.bottom.mas_equalTo(lastView.mas_bottom).mas_offset(20.66);
         }];
     } else {
         [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -97,7 +101,7 @@
     if (!_titleLbl) {
         _titleLbl = [[UILabel alloc] init];
         _titleLbl.textColor = [UIColor blackColor];
-        _titleLbl.font = [UIFont systemFontOfSize:17.0];
+        _titleLbl.font = [UIFont systemFontOfSize:17.0 weight:UIFontWeightBold];
         _titleLbl.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLbl;
@@ -111,6 +115,14 @@
         _messageLbl.textAlignment = NSTextAlignmentCenter;
     }
     return _messageLbl;
+}
+
+- (UIView *)containerView {
+    if (!_containerView) {
+        _containerView = [[UIView alloc] init];
+        _containerView.backgroundColor = [UIColor redColor];
+    }
+    return _containerView;
 }
 
 @end

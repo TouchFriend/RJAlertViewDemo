@@ -54,7 +54,7 @@
     }];
     self.stackView = stackView;
     stackView.axis = self.vertical ? UILayoutConstraintAxisVertical :  UILayoutConstraintAxisHorizontal;
-    stackView.backgroundColor = [UIColor systemPinkColor];
+    stackView.backgroundColor = [UIColor clearColor];
     stackView.distribution = UIStackViewDistributionFill;
     stackView.alignment = UIStackViewAlignmentFill;
     stackView.spacing = 0.0;
@@ -104,8 +104,6 @@
                     make.width.mas_equalTo(RJAlertControllerSeparatorViewDefaultHeight);
                 }
             }];
-            // 179 154 131
-            separatorView.backgroundColor = RJColor(179.0, 154.0, 131.0);
             [views addObject:separatorView];
         }
         _separatorViews = [views copy];

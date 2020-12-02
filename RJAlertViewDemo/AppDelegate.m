@@ -24,7 +24,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    RJAlertDemoViewController *vc = [[RJAlertDemoViewController alloc] init];
     RJAlertViewController *vc = [[RJAlertViewController alloc] init];
-//    RJMultipViewConstraintViewController *vc = [[RJMultipViewConstraintViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];

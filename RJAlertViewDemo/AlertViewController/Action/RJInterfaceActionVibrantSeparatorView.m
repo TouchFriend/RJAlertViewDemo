@@ -7,15 +7,16 @@
 //
 
 #import "RJInterfaceActionVibrantSeparatorView.h"
+#import "RJAlertViewConst.h"
 
 @implementation RJInterfaceActionVibrantSeparatorView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = RJColor(179.0, 154.0, 131.0);
+    }
+    return self;
 }
-*/
 
 @end

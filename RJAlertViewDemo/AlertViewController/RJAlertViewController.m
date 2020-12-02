@@ -27,8 +27,6 @@
         make.center.mas_equalTo(self.view);
         make.width.mas_equalTo(270.0);
     }];
-    actionGroupView.backgroundColor = [UIColor orangeColor];
-    
 }
 
 

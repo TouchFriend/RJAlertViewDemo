@@ -33,6 +33,7 @@
 #pragma mark - Setup Init
 
 - (void)setupInit {
+    self.backgroundColor = [UIColor clearColor];
     self.bounces = NO;
     self.showsHorizontalScrollIndicator = NO;
     CGFloat contentHeight = [self calculateContentHeight];
@@ -48,7 +49,6 @@
         make.height.mas_equalTo(contentHeight);
     }];
     self.sequenceView = sequenceView;
-    sequenceView.backgroundColor = [UIColor purpleColor];
 }
 
 - (CGFloat)calculateContentHeight {
