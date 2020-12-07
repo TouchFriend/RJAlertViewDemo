@@ -10,26 +10,35 @@
 #import "RJInterfaceActionGroupHeaderScrollView.h"
 #import "RJInterfaceActionRepresentationsSequenceView.h"
 #import <Masonry/Masonry.h>
-#import "RJAlertControllerActionItem.h"
+#import "RJAlertAction.h"
 #import "RJInterfaceActionVibrantSeparatorView.h"
 #import "RJAlertControllerActionViewConst.h"
 
 @interface RJAlertControllerInterfaceActionGroupView ()
 
+/// 标题
+@property (nullable, nonatomic, copy) NSString *title;
+/// 消息
+@property (nullable, nonatomic, copy) NSString *message;
+/// 内容
+@property (nonatomic, strong) UIView *contentView;
 /// 操作数据
-@property (nonatomic, strong) NSArray<RJAlertControllerActionItem *> *actionItems;
+@property (nonatomic, strong) NSArray<RJAlertAction *> *actions;
 
 @end
 
 @implementation RJAlertControllerInterfaceActionGroupView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupInit];
-    }
-        
-    return self;
+#pragma mark - Init
+
++ (instancetype)viewWithTitle:(NSString *)title message:(NSString *)message contentView:(UIView *)contentView actions:(NSArray<RJAlertAction *> *)actions {
+    RJAlertControllerInterfaceActionGroupView *groupView = [[self alloc] init];
+    groupView.title = title;
+    groupView.message = message;
+    groupView.contentView = contentView;
+    groupView.actions = actions;
+    [groupView setupInit];
+    return groupView;
 }
 
 #pragma mark - Setup Init
@@ -39,10 +48,10 @@
     self.layer.cornerRadius = 10.0;
     self.layer.masksToBounds = YES;
     
-    RJAlertControllerActionItem *item1 = [[RJAlertControllerActionItem alloc] init];
-    RJAlertControllerActionItem *item2 = [[RJAlertControllerActionItem alloc] init];
-    RJAlertControllerActionItem *item3 = [[RJAlertControllerActionItem alloc] init];
-    self.actionItems = @[item1, item2, item3];
+//    RJAlertAction *item1 = [[RJAlertAction alloc] init];
+//    RJAlertAction *item2 = [[RJAlertAction alloc] init];
+//    RJAlertAction *item3 = [[RJAlertAction alloc] init];
+//    self.actions = @[item1, item2, item3];
     
     [self setupContentView];
 }
@@ -54,13 +63,13 @@
         make.edges.mas_equalTo(self);
     }];
     
-    RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:@"title" message:@"message"];
+    RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:self.title message:self.message];
     [contentView addSubview:headerView];
     [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(contentView);
     }];
     
-    if (self.actionItems.count > 0) {
+    if (self.actions.count > 0) {
         RJInterfaceActionVibrantSeparatorView *separatorView = [[RJInterfaceActionVibrantSeparatorView alloc] init];
         [contentView addSubview:separatorView];
         [separatorView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -69,7 +78,7 @@
             make.height.mas_equalTo(RJAlertControllerSeparatorViewDefaultHeight);
         }];
         
-        RJInterfaceActionRepresentationsSequenceView *actionView = [[RJInterfaceActionRepresentationsSequenceView alloc] initWithActionItems:self.actionItems];
+        RJInterfaceActionRepresentationsSequenceView *actionView = [[RJInterfaceActionRepresentationsSequenceView alloc] initWithActions:self.actions];
         [contentView addSubview:actionView];
         [actionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(separatorView.mas_bottom);

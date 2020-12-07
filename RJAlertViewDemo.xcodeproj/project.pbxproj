@@ -28,7 +28,7 @@
 		BFAA05B12578BC08004054FE /* RJDog.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA05B02578BC08004054FE /* RJDog.m */; };
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
 		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
-		BFF424EF2575D76900DA3359 /* RJAlertControllerActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */; };
+		BFF424EF2575D76900DA3359 /* RJAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF424EE2575D76900DA3359 /* RJAlertAction.m */; };
 		BFF4277B257893390014951A /* RJReactiveChainDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF4277A257893390014951A /* RJReactiveChainDemoViewController.m */; };
 		BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */; };
 /* End PBXBuildFile section */
@@ -74,8 +74,8 @@
 		BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionViewConst.m; sourceTree = "<group>"; };
 		BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertDemoViewController.h; sourceTree = "<group>"; };
 		BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertDemoViewController.m; sourceTree = "<group>"; };
-		BFF424ED2575D76900DA3359 /* RJAlertControllerActionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionItem.h; sourceTree = "<group>"; };
-		BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionItem.m; sourceTree = "<group>"; };
+		BFF424ED2575D76900DA3359 /* RJAlertAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertAction.h; sourceTree = "<group>"; };
+		BFF424EE2575D76900DA3359 /* RJAlertAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertAction.m; sourceTree = "<group>"; };
 		BFF424F22575E74F00DA3359 /* RJAlertViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewConst.h; sourceTree = "<group>"; };
 		BFF42779257893390014951A /* RJReactiveChainDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReactiveChainDemoViewController.h; sourceTree = "<group>"; };
 		BFF4277A257893390014951A /* RJReactiveChainDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJReactiveChainDemoViewController.m; sourceTree = "<group>"; };
@@ -172,8 +172,8 @@
 				BF60E5302574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m */,
 				BF60E5352574E6B000E4F0A7 /* RJAlertControllerActionView.h */,
 				BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */,
-				BFF424ED2575D76900DA3359 /* RJAlertControllerActionItem.h */,
-				BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */,
+				BFF424ED2575D76900DA3359 /* RJAlertAction.h */,
+				BFF424EE2575D76900DA3359 /* RJAlertAction.m */,
 				BF60E53B2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.h */,
 				BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */,
 			);
@@ -353,7 +353,7 @@
 				BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */,
 				BFAA05AD2578BBFF004054FE /* RJPerson.m in Sources */,
 				BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */,
-				BFF424EF2575D76900DA3359 /* RJAlertControllerActionItem.m in Sources */,
+				BFF424EF2575D76900DA3359 /* RJAlertAction.m in Sources */,
 				BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */,
 				BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */,
 				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,

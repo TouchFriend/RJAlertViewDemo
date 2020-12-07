@@ -10,7 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "RJAlertControllerActionView.h"
 #import "RJInterfaceActionVibrantSeparatorView.h"
-#import "RJAlertControllerActionItem.h"
+#import "RJAlertAction.h"
 #import "RJAlertViewConst.h"
 #import "RJAlertControllerActionViewConst.h"
 
@@ -32,10 +32,10 @@
 
 @implementation RJInterfaceActionSeparatableSequenceView
 
-- (instancetype)initWithActionItems:(NSArray *)actionItems {
+- (instancetype)initWithActions:(NSArray *)actions {
     self = [super init];
     if (self) {
-        self.actionItems = actionItems;
+        self.actions = actions;
         [self setupInit];
     }
     return self;
@@ -76,9 +76,9 @@
 - (NSArray<RJAlertControllerActionView *> *)actionViews {
     if (!_actionViews) {
         NSMutableArray *actions = [NSMutableArray array];
-        for (RJAlertControllerActionItem *item in self.actionItems) {
+        for (RJAlertAction *action in self.actions) {
             RJAlertControllerActionView *actionView = [[RJAlertControllerActionView alloc] init];
-//            actionView.backgroundColor = RJRandomColor;
+            actionView.action = action;
             [actions addObject:actionView];
         }
         _actionViews = [actions copy];

@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class RJAlertAction;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RJAlertControllerActionView : UIView
+
+/// 数据
+@property (nonatomic, strong) RJAlertAction *action;
+
 
 @end
 

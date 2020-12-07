@@ -50,7 +50,7 @@
     [super viewDidAppear:animated];
     
     if (!self.presentedViewController) {
-        [self openBtnClick];
+//        [self openBtnClick];
     }
 }
 
@@ -62,13 +62,24 @@
 }
 
 - (void)openBtnClick {
-//    [self showAlertController];
-    [self showPhoneNumberValidView];
+    [self showAlertController];
+//    [self showPhoneNumberValidView];
 }
 
 - (void)showAlertController {
-    RJAlertViewController *alertViewController = [[RJAlertViewController alloc] init];
-    [self presentViewController:alertViewController animated:YES completion:nil];
+    RJAlertViewController *vc = [RJAlertViewController alertControllerWithTitle:@"czx" message:@"messages1"];
+    RJAlertAction *item1 = [RJAlertAction actionWithTitle:@"打开" handler:^(RJAlertAction * _Nonnull action) {
+        
+    }];
+    RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
+        
+    }];
+    RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
+        
+    }];
+    [vc addActions:@[item1, item2, item3]];
+        
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)showPhoneNumberValidView {
@@ -76,7 +87,9 @@
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
-    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
     UIAlertAction *testAction = [UIAlertAction actionWithTitle:@"haha" style:UIAlertActionStyleDefault handler:nil];
     UIAlertAction *testAction1 = [UIAlertAction actionWithTitle:@"haha" style:UIAlertActionStyleDefault handler:nil];
     UIAlertAction *testAction2 = [UIAlertAction actionWithTitle:@"haha" style:UIAlertActionStyleDefault handler:nil];

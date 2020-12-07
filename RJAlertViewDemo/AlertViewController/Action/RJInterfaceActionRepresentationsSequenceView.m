@@ -9,7 +9,7 @@
 #import "RJInterfaceActionRepresentationsSequenceView.h"
 #import "RJInterfaceActionSeparatableSequenceView.h"
 #import <Masonry/Masonry.h>
-#import "RJAlertControllerActionItem.h"
+#import "RJAlertAction.h"
 #import "RJAlertControllerActionViewConst.h"
 
 @interface RJInterfaceActionRepresentationsSequenceView ()
@@ -21,10 +21,10 @@
 
 @implementation RJInterfaceActionRepresentationsSequenceView
 
-- (instancetype)initWithActionItems:(NSArray *)actionItems {
+- (instancetype)initWithActions:(NSArray *)actions {
     self = [super init];
     if (self) {
-        self.actionItems = actionItems;
+        self.actions = actions;
         [self setupInit];
     }
     return self;
@@ -37,14 +37,13 @@
     self.bounces = NO;
     self.showsHorizontalScrollIndicator = NO;
     self.layer.masksToBounds = YES;
-//    self.clipsToBounds = YES;
     
     CGFloat contentHeight = [self calculateContentHeight];
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(contentHeight);
     }];
     
-    RJInterfaceActionSeparatableSequenceView *sequenceView = [[RJInterfaceActionSeparatableSequenceView alloc] initWithActionItems:self.actionItems];
+    RJInterfaceActionSeparatableSequenceView *sequenceView = [[RJInterfaceActionSeparatableSequenceView alloc] initWithActions:self.actions];
     [self addSubview:sequenceView];
     [sequenceView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self);
@@ -56,12 +55,12 @@
 
 - (CGFloat)calculateContentHeight {
     CGFloat contentHeight = 0.0;
-    if (self.actionItems.count <= 2) {
+    if (self.actions.count <= 2) {
         contentHeight = RJAlertControllerActionViewDefaultHeight;
         return contentHeight;
     }
     
-    contentHeight += self.actionItems.count * RJAlertControllerActionViewDefaultHeight + (self.actionItems.count - 1) * RJAlertControllerSeparatorViewDefaultHeight;
+    contentHeight += self.actions.count * RJAlertControllerActionViewDefaultHeight + (self.actions.count - 1) * RJAlertControllerSeparatorViewDefaultHeight;
     return contentHeight;
 }
 
