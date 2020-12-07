@@ -24,9 +24,12 @@
 		BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF879A6225778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m */; };
 		BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */; };
 		BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */; };
+		BFAA05AD2578BBFF004054FE /* RJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA05AC2578BBFF004054FE /* RJPerson.m */; };
+		BFAA05B12578BC08004054FE /* RJDog.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA05B02578BC08004054FE /* RJDog.m */; };
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
 		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
 		BFF424EF2575D76900DA3359 /* RJAlertControllerActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */; };
+		BFF4277B257893390014951A /* RJReactiveChainDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF4277A257893390014951A /* RJReactiveChainDemoViewController.m */; };
 		BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,10 @@
 		BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertViewController.m; sourceTree = "<group>"; };
 		BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJStackViewDemoViewController.h; sourceTree = "<group>"; };
 		BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJStackViewDemoViewController.m; sourceTree = "<group>"; };
+		BFAA05AB2578BBFF004054FE /* RJPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJPerson.h; sourceTree = "<group>"; };
+		BFAA05AC2578BBFF004054FE /* RJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJPerson.m; sourceTree = "<group>"; };
+		BFAA05AF2578BC08004054FE /* RJDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDog.h; sourceTree = "<group>"; };
+		BFAA05B02578BC08004054FE /* RJDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJDog.m; sourceTree = "<group>"; };
 		BFE19C3A25762121000BB017 /* RJAlertControllerActionViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionViewConst.h; sourceTree = "<group>"; };
 		BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionViewConst.m; sourceTree = "<group>"; };
 		BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertDemoViewController.h; sourceTree = "<group>"; };
@@ -70,6 +77,8 @@
 		BFF424ED2575D76900DA3359 /* RJAlertControllerActionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionItem.h; sourceTree = "<group>"; };
 		BFF424EE2575D76900DA3359 /* RJAlertControllerActionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionItem.m; sourceTree = "<group>"; };
 		BFF424F22575E74F00DA3359 /* RJAlertViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewConst.h; sourceTree = "<group>"; };
+		BFF42779257893390014951A /* RJReactiveChainDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJReactiveChainDemoViewController.h; sourceTree = "<group>"; };
+		BFF4277A257893390014951A /* RJReactiveChainDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJReactiveChainDemoViewController.m; sourceTree = "<group>"; };
 		BFF8E02625772FB300CEE91A /* RJMultipViewConstraintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMultipViewConstraintViewController.h; sourceTree = "<group>"; };
 		BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMultipViewConstraintViewController.m; sourceTree = "<group>"; };
 		CD96C178E13A4B363E67E7A8 /* Pods-RJiPhoneXAdaptDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJiPhoneXAdaptDemo.release.xcconfig"; path = "Target Support Files/Pods-RJiPhoneXAdaptDemo/Pods-RJiPhoneXAdaptDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +130,7 @@
 		BF3524B5256CDF42005E02C4 /* RJAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF6A28682578BB5100A96AF4 /* ReactiveChain */,
 				BF9F22002570A6D600DD3F19 /* AlertViewController */,
 				BF3524FA256CE098005E02C4 /* ViewControllers */,
 				BF3524B6256CDF42005E02C4 /* AppDelegate.h */,
@@ -177,6 +187,19 @@
 				BF60E51B2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		BF6A28682578BB5100A96AF4 /* ReactiveChain */ = {
+			isa = PBXGroup;
+			children = (
+				BFF42779257893390014951A /* RJReactiveChainDemoViewController.h */,
+				BFF4277A257893390014951A /* RJReactiveChainDemoViewController.m */,
+				BFAA05AB2578BBFF004054FE /* RJPerson.h */,
+				BFAA05AC2578BBFF004054FE /* RJPerson.m */,
+				BFAA05AF2578BC08004054FE /* RJDog.h */,
+				BFAA05B02578BC08004054FE /* RJDog.m */,
+			);
+			path = ReactiveChain;
 			sourceTree = "<group>";
 		};
 		BF879A5B25778D90008BDDCF /* UIKit */ = {
@@ -326,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAA05B12578BC08004054FE /* RJDog.m in Sources */,
 				BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */,
+				BFAA05AD2578BBFF004054FE /* RJPerson.m in Sources */,
 				BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */,
 				BFF424EF2575D76900DA3359 /* RJAlertControllerActionItem.m in Sources */,
 				BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */,
@@ -334,6 +359,7 @@
 				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,
 				BF3524F6256CE093005E02C4 /* RJMainViewController.m in Sources */,
 				BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */,
+				BFF4277B257893390014951A /* RJReactiveChainDemoViewController.m in Sources */,
 				BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */,
 				BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */,
 				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,

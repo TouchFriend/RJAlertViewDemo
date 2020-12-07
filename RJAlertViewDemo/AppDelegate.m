@@ -11,6 +11,7 @@
 #import "RJStackViewDemoViewController.h"
 #import "RJAlertViewController.h"
 #import "RJMultipViewConstraintViewController.h"
+#import "RJReactiveChainDemoViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    RJAlertDemoViewController *vc = [[RJAlertDemoViewController alloc] init];
     RJAlertViewController *vc = [[RJAlertViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navigationController;
