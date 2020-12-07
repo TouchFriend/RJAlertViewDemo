@@ -26,6 +26,7 @@
 		BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */; };
 		BFAA05AD2578BBFF004054FE /* RJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA05AC2578BBFF004054FE /* RJPerson.m */; };
 		BFAA05B12578BC08004054FE /* RJDog.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA05B02578BC08004054FE /* RJDog.m */; };
+		BFCF5B83257E2FE4009A3A86 /* RJVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */; };
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
 		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
 		BFF424EF2575D76900DA3359 /* RJAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF424EE2575D76900DA3359 /* RJAlertAction.m */; };
@@ -70,6 +71,8 @@
 		BFAA05AC2578BBFF004054FE /* RJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJPerson.m; sourceTree = "<group>"; };
 		BFAA05AF2578BC08004054FE /* RJDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDog.h; sourceTree = "<group>"; };
 		BFAA05B02578BC08004054FE /* RJDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJDog.m; sourceTree = "<group>"; };
+		BFCF5B81257E2FE4009A3A86 /* RJVerifyCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJVerifyCodeView.h; sourceTree = "<group>"; };
+		BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJVerifyCodeView.m; sourceTree = "<group>"; };
 		BFE19C3A25762121000BB017 /* RJAlertControllerActionViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionViewConst.h; sourceTree = "<group>"; };
 		BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionViewConst.m; sourceTree = "<group>"; };
 		BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertDemoViewController.h; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		BF3524FA256CE098005E02C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFCF5B80257E2F9C009A3A86 /* Views */,
 				BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */,
 				BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */,
 				BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */,
@@ -224,6 +228,15 @@
 				BF879A5B25778D90008BDDCF /* UIKit */,
 			);
 			path = AlertViewController;
+			sourceTree = "<group>";
+		};
+		BFCF5B80257E2F9C009A3A86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF5B81257E2FE4009A3A86 /* RJVerifyCodeView.h */,
+				BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D280D08548937AE9C2374642 /* Frameworks */ = {
@@ -362,6 +375,7 @@
 				BFF4277B257893390014951A /* RJReactiveChainDemoViewController.m in Sources */,
 				BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */,
 				BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */,
+				BFCF5B83257E2FE4009A3A86 /* RJVerifyCodeView.m in Sources */,
 				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,
 				BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */,
 				BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */,

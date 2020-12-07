@@ -9,6 +9,7 @@
 #import "RJAlertDemoViewController.h"
 #import "RJAlertViewController.h"
 #import <Masonry/Masonry.h>
+#import "RJVerifyCodeView.h"
 
 @interface RJAlertDemoViewController ()
 
@@ -43,14 +44,13 @@
     [openBtn addTarget:self action:@selector(openBtnClick) forControlEvents:UIControlEventTouchUpInside];
     openBtn.layer.masksToBounds = YES;
     openBtn.layer.cornerRadius = 4.0;
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     if (!self.presentedViewController) {
-//        [self openBtnClick];
+        [self openBtnClick];
     }
 }
 
@@ -72,12 +72,16 @@
         
     }];
     RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
-        
+
     }];
     RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
         
     }];
-    [vc addActions:@[item1, item2, item3]];
+    [vc addActions:@[item1, item3]];
+    
+    RJVerifyCodeView *verifyCodeView = [[RJVerifyCodeView alloc] init];
+    verifyCodeView.backgroundColor = [UIColor redColor];
+    vc.contentView = verifyCodeView;
         
     [self presentViewController:vc animated:YES completion:nil];
 }

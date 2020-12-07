@@ -48,11 +48,6 @@
     self.layer.cornerRadius = 10.0;
     self.layer.masksToBounds = YES;
     
-//    RJAlertAction *item1 = [[RJAlertAction alloc] init];
-//    RJAlertAction *item2 = [[RJAlertAction alloc] init];
-//    RJAlertAction *item3 = [[RJAlertAction alloc] init];
-//    self.actions = @[item1, item2, item3];
-    
     [self setupContentView];
 }
 
