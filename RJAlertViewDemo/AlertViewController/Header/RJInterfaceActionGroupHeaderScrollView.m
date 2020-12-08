@@ -21,18 +21,19 @@
 /// 描述
 @property (nonatomic, strong) UILabel *messageLbl;
 /// 容器
-@property (nonatomic, strong) UIView *containerView;
+@property (nonatomic, strong) UIView *customContentView;
 
 
 @end
 
 @implementation RJInterfaceActionGroupHeaderScrollView
 
-- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message {
+- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message contentView:(UIView *)contentView {
     self = [super init];
     if (self) {
         self.title = title;
         self.message = message;
+        self.customContentView = contentView;
         [self setupInit];
     }
     return self;
@@ -76,9 +77,20 @@
         lastView = self.messageLbl;
     }
     
+    if (self.customContentView) {
+        [contentView addSubview:self.customContentView];
+        [self.customContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            [self addTopConstraint:make lastView:lastView flag:lastView != contentView top:0.0];
+            make.left.right.mas_equalTo(contentView);
+        }];
+        lastView = self.customContentView;
+    }
+    
     if (lastView != contentView) {
+        CGFloat contentViewBottomOffset = (lastView == self.customContentView) ? 0 : 20.66;
         [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(lastView.mas_bottom).mas_offset(20.66);
+            
+            make.bottom.mas_equalTo(lastView.mas_bottom).mas_offset(contentViewBottomOffset);
         }];
     } else {
         [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -115,14 +127,6 @@
         _messageLbl.textAlignment = NSTextAlignmentCenter;
     }
     return _messageLbl;
-}
-
-- (UIView *)containerView {
-    if (!_containerView) {
-        _containerView = [[UIView alloc] init];
-        _containerView.backgroundColor = [UIColor redColor];
-    }
-    return _containerView;
 }
 
 @end

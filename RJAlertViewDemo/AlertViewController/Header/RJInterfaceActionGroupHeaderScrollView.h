@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RJInterfaceActionGroupHeaderScrollView : UIScrollView
 
-- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message;
+- (instancetype)initWithTitle:(NSString *)title message:(NSString *)message contentView:(UIView *)contentView;
 
 @end
 

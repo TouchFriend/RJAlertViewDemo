@@ -58,7 +58,7 @@
         make.edges.mas_equalTo(self);
     }];
     
-    RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:self.title message:self.message];
+    RJInterfaceActionGroupHeaderScrollView *headerView = [[RJInterfaceActionGroupHeaderScrollView alloc] initWithTitle:self.title message:self.message contentView:self.contentView];
     [contentView addSubview:headerView];
     [headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(contentView);

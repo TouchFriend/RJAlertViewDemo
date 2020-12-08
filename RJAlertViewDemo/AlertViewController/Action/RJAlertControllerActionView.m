@@ -65,10 +65,10 @@
         self.action.handler(self.action);
     }
     
-    UIViewController *viewController = [self viewController];
-    if (viewController) {
-        [viewController dismissViewControllerAnimated:YES completion:nil];
-    }
+//    UIViewController *viewController = [self viewController];
+//    if (viewController) {
+//        [viewController dismissViewControllerAnimated:YES completion:nil];
+//    }
 }
 
 #pragma mark - Property

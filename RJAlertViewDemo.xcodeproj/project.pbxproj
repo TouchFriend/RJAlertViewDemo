@@ -21,6 +21,7 @@
 		BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5302574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m */; };
 		BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */; };
 		BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */; };
+		BF7C3359257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7C3358257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m */; };
 		BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF879A6225778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m */; };
 		BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22022570A6F100DD3F19 /* RJAlertViewController.m */; };
 		BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */; };
@@ -29,6 +30,8 @@
 		BFCF5B83257E2FE4009A3A86 /* RJVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */; };
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
 		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
+		BFF1D3F5257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1D3F4257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m */; };
+		BFF1D3F9257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1D3F8257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m */; };
 		BFF424EF2575D76900DA3359 /* RJAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF424EE2575D76900DA3359 /* RJAlertAction.m */; };
 		BFF4277B257893390014951A /* RJReactiveChainDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF4277A257893390014951A /* RJReactiveChainDemoViewController.m */; };
 		BFF8E02825772FB300CEE91A /* RJMultipViewConstraintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8E02725772FB300CEE91A /* RJMultipViewConstraintViewController.m */; };
@@ -61,6 +64,8 @@
 		BF60E5362574E6B000E4F0A7 /* RJAlertControllerActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionView.m; sourceTree = "<group>"; };
 		BF60E53B2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJInterfaceActionVibrantSeparatorView.h; sourceTree = "<group>"; };
 		BF60E53C2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJInterfaceActionVibrantSeparatorView.m; sourceTree = "<group>"; };
+		BF7C3357257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJVerifyCodePhoneSelectView.h; sourceTree = "<group>"; };
+		BF7C3358257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJVerifyCodePhoneSelectView.m; sourceTree = "<group>"; };
 		BF879A6125778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RJAlertViewControllerAdd.h"; sourceTree = "<group>"; };
 		BF879A6225778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RJAlertViewControllerAdd.m"; sourceTree = "<group>"; };
 		BF9F22012570A6F100DD3F19 /* RJAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewController.h; sourceTree = "<group>"; };
@@ -77,6 +82,10 @@
 		BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionViewConst.m; sourceTree = "<group>"; };
 		BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertDemoViewController.h; sourceTree = "<group>"; };
 		BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertDemoViewController.m; sourceTree = "<group>"; };
+		BFF1D3F3257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJVerifyCodePhoneSelectCell.h; sourceTree = "<group>"; };
+		BFF1D3F4257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJVerifyCodePhoneSelectCell.m; sourceTree = "<group>"; };
+		BFF1D3F7257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJVerifyCodePhoneSelectTableHeaderView.h; sourceTree = "<group>"; };
+		BFF1D3F8257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJVerifyCodePhoneSelectTableHeaderView.m; sourceTree = "<group>"; };
 		BFF424ED2575D76900DA3359 /* RJAlertAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertAction.h; sourceTree = "<group>"; };
 		BFF424EE2575D76900DA3359 /* RJAlertAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertAction.m; sourceTree = "<group>"; };
 		BFF424F22575E74F00DA3359 /* RJAlertViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertViewConst.h; sourceTree = "<group>"; };
@@ -235,6 +244,12 @@
 			children = (
 				BFCF5B81257E2FE4009A3A86 /* RJVerifyCodeView.h */,
 				BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */,
+				BF7C3357257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.h */,
+				BF7C3358257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m */,
+				BFF1D3F3257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.h */,
+				BFF1D3F4257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m */,
+				BFF1D3F7257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.h */,
+				BFF1D3F8257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +382,7 @@
 				BFAA05AD2578BBFF004054FE /* RJPerson.m in Sources */,
 				BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */,
 				BFF424EF2575D76900DA3359 /* RJAlertAction.m in Sources */,
+				BFF1D3F9257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m in Sources */,
 				BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */,
 				BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */,
 				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,
@@ -378,6 +394,8 @@
 				BFCF5B83257E2FE4009A3A86 /* RJVerifyCodeView.m in Sources */,
 				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,
 				BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */,
+				BFF1D3F5257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m in Sources */,
+				BF7C3359257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m in Sources */,
 				BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */,
 				BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */,
 				BF60E5162574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m in Sources */,

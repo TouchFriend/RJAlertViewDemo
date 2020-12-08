@@ -16,6 +16,7 @@
 /// <#Desription#>
 @property (nonatomic, weak) UIButton *openBtn;
 
+
 @end
 
 @implementation RJAlertDemoViewController
@@ -67,21 +68,27 @@
 }
 
 - (void)showAlertController {
-    RJAlertViewController *vc = [RJAlertViewController alertControllerWithTitle:@"czx" message:@"messages1"];
-    RJAlertAction *item1 = [RJAlertAction actionWithTitle:@"打开" handler:^(RJAlertAction * _Nonnull action) {
-        
+    RJAlertViewController *vc = [RJAlertViewController alertControllerWithTitle:@"短信验证" message:nil];
+    RJAlertAction *item1 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
+        [self dismissViewControllerAnimated:YES completion:nil];
     }];
-    RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
+    RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"确定" handler:^(RJAlertAction * _Nonnull action) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
 
     }];
-    RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
-        
-    }];
-    [vc addActions:@[item1, item3]];
+    [vc addActions:@[item1, item2]];
     
-    RJVerifyCodeView *verifyCodeView = [[RJVerifyCodeView alloc] init];
-    verifyCodeView.backgroundColor = [UIColor redColor];
-    vc.contentView = verifyCodeView;
+    NSArray *phoneNumbers = @[@"17746076231", @"17746076231", @"17746076231"];
+    RJVerifyCodeView *verifyCodeView = [[RJVerifyCodeView alloc] initWithPhoneNumbers:phoneNumbers];
+    
+    UIView *contentView = [[UIView alloc] init];
+    [contentView addSubview:verifyCodeView];
+    [verifyCodeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(contentView).insets(UIEdgeInsetsMake(25.0, 0.0, 25.0, 0.0));
+    }];
+    vc.contentView = contentView;
         
     [self presentViewController:vc animated:YES completion:nil];
 }
@@ -120,5 +127,7 @@
 //    alertController.preferredAction = confirmAction;
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
+#pragma mark - Property
 
 @end
