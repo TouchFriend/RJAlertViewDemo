@@ -9,4 +9,4 @@
 #import "RJAlertControllerActionViewConst.h"
 
 const CGFloat RJAlertControllerActionViewDefaultHeight = 44.0;
-const CGFloat RJAlertControllerSeparatorViewDefaultHeight = 0.3333;
+

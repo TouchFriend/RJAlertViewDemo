@@ -9,5 +9,6 @@ target 'RJAlertViewDemo' do
 
   pod 'Masonry'
   pod 'RJKit/Timer'
-
+  pod 'IQKeyboardManager'
+  
 end

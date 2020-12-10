@@ -110,7 +110,7 @@
     
     [alertController addAction:cancelAction];
     [alertController addAction:confirmAction];
-    [alertController addAction:testAction];
+//    [alertController addAction:testAction];
 //    [alertController addAction:testAction1];
 //    [alertController addAction:testAction2];
 //    [alertController addAction:testAction3];

@@ -24,9 +24,8 @@
 @property (nonatomic, strong) NSArray<__kindof UIView *> *arrangedSubviews;
 /// stackView
 @property (nonatomic, weak) UIStackView *stackView;
-/// <#Desription#>
+/// 是否垂直排列
 @property (nonatomic, assign, getter=isVertical) BOOL vertical;
-
 
 @end
 

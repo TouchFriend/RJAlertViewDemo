@@ -79,7 +79,7 @@
     
     [self addSubview:self.codeBtn];
     [self.codeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(self.codeTextF).mas_offset(2.0);
+        make.centerY.mas_equalTo(self.codeTextF).mas_offset(1.0);
         make.width.mas_equalTo(115.0);
         make.right.mas_equalTo(self).mas_offset(-10.0);
         make.height.mas_equalTo(30.0);
