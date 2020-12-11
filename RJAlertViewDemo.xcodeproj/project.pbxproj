@@ -29,6 +29,7 @@
 		BFAA05B12578BC08004054FE /* RJDog.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA05B02578BC08004054FE /* RJDog.m */; };
 		BFCF5B83257E2FE4009A3A86 /* RJVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */; };
 		BFE19C3C25762121000BB017 /* RJAlertControllerActionViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */; };
+		BFF0BABE2582253C000D71FC /* RJDeleteZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF0BABD2582253C000D71FC /* RJDeleteZeroViewController.m */; };
 		BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */; };
 		BFF1D3F5257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1D3F4257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m */; };
 		BFF1D3F9257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1D3F8257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m */; };
@@ -80,6 +81,8 @@
 		BFCF5B82257E2FE4009A3A86 /* RJVerifyCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJVerifyCodeView.m; sourceTree = "<group>"; };
 		BFE19C3A25762121000BB017 /* RJAlertControllerActionViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertControllerActionViewConst.h; sourceTree = "<group>"; };
 		BFE19C3B25762121000BB017 /* RJAlertControllerActionViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertControllerActionViewConst.m; sourceTree = "<group>"; };
+		BFF0BABC2582253C000D71FC /* RJDeleteZeroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJDeleteZeroViewController.h; sourceTree = "<group>"; };
+		BFF0BABD2582253C000D71FC /* RJDeleteZeroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJDeleteZeroViewController.m; sourceTree = "<group>"; };
 		BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAlertDemoViewController.h; sourceTree = "<group>"; };
 		BFF144C4257097BA00861CA9 /* RJAlertDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAlertDemoViewController.m; sourceTree = "<group>"; };
 		BFF1D3F3257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJVerifyCodePhoneSelectCell.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				BFCF5B80257E2F9C009A3A86 /* Views */,
+				BFF0BABC2582253C000D71FC /* RJDeleteZeroViewController.h */,
+				BFF0BABD2582253C000D71FC /* RJDeleteZeroViewController.m */,
 				BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */,
 				BF9F22112570EAA200DD3F19 /* RJStackViewDemoViewController.m */,
 				BFF144C3257097BA00861CA9 /* RJAlertDemoViewController.h */,
@@ -383,6 +388,7 @@
 				BFF144C5257097BA00861CA9 /* RJAlertDemoViewController.m in Sources */,
 				BFF424EF2575D76900DA3359 /* RJAlertAction.m in Sources */,
 				BFF1D3F9257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m in Sources */,
+				BFF0BABE2582253C000D71FC /* RJDeleteZeroViewController.m in Sources */,
 				BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */,
 				BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */,
 				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,
