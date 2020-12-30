@@ -18,7 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
+}
+
+- (void)deleteZeroTest {
     NSLog(@"%@", [self numberValueDeleteZero:12.13]);
     NSLog(@"%@", [self numberStringDeleteZero:@"1.30310000"]);
     NSLog(@"%@", [self numberStringDeleteZero:@"10.00"]);
