@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		97187949EB248CA2DC085448 /* Pods_RJAlertViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E527CC2319A59EE86FB15DC2 /* Pods_RJAlertViewDemo.framework */; };
+		BF07811225B96F14004C325E /* RJMultipleAccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF07811125B96F14004C325E /* RJMultipleAccountView.m */; };
+		BF07811725B9753F004C325E /* RJMultipleAccountSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF07811625B9753F004C325E /* RJMultipleAccountSelectView.m */; };
+		BF07811B25B97556004C325E /* RJMultipleAccountSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF07811A25B97556004C325E /* RJMultipleAccountSelectCell.m */; };
+		BF07811F25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF07811E25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.m */; };
 		BF27EC7225B9309B00D65058 /* RJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27EC7025B9309B00D65058 /* RJProgressHUD.m */; };
 		BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524B7256CDF42005E02C4 /* AppDelegate.m */; };
 		BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524BD256CDF42005E02C4 /* ViewController.m */; };
@@ -42,6 +46,14 @@
 /* Begin PBXFileReference section */
 		6EC19876DFD0ED44071BBD0C /* Pods-RJAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJAlertViewDemo.release.xcconfig"; path = "Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BE5836C050B9D245E175D5D8 /* Pods-RJAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJAlertViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BF07811025B96F14004C325E /* RJMultipleAccountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMultipleAccountView.h; sourceTree = "<group>"; };
+		BF07811125B96F14004C325E /* RJMultipleAccountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMultipleAccountView.m; sourceTree = "<group>"; };
+		BF07811525B9753F004C325E /* RJMultipleAccountSelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMultipleAccountSelectView.h; sourceTree = "<group>"; };
+		BF07811625B9753F004C325E /* RJMultipleAccountSelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMultipleAccountSelectView.m; sourceTree = "<group>"; };
+		BF07811925B97556004C325E /* RJMultipleAccountSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMultipleAccountSelectCell.h; sourceTree = "<group>"; };
+		BF07811A25B97556004C325E /* RJMultipleAccountSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMultipleAccountSelectCell.m; sourceTree = "<group>"; };
+		BF07811D25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJMultipleAccountSelectTableHeaderView.h; sourceTree = "<group>"; };
+		BF07811E25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJMultipleAccountSelectTableHeaderView.m; sourceTree = "<group>"; };
 		BF27EC7025B9309B00D65058 /* RJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJProgressHUD.m; sourceTree = "<group>"; };
 		BF27EC7125B9309B00D65058 /* RJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJProgressHUD.h; sourceTree = "<group>"; };
 		BF3524B3256CDF42005E02C4 /* RJAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +160,14 @@
 		BF27EC7625B930EB00D65058 /* AccountSelect */ = {
 			isa = PBXGroup;
 			children = (
+				BF07811025B96F14004C325E /* RJMultipleAccountView.h */,
+				BF07811125B96F14004C325E /* RJMultipleAccountView.m */,
+				BF07811525B9753F004C325E /* RJMultipleAccountSelectView.h */,
+				BF07811625B9753F004C325E /* RJMultipleAccountSelectView.m */,
+				BF07811925B97556004C325E /* RJMultipleAccountSelectCell.h */,
+				BF07811A25B97556004C325E /* RJMultipleAccountSelectCell.m */,
+				BF07811D25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.h */,
+				BF07811E25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.m */,
 			);
 			path = AccountSelect;
 			sourceTree = "<group>";
@@ -419,6 +439,7 @@
 				BFF1D3F9257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m in Sources */,
 				BFF0BABE2582253C000D71FC /* RJDeleteZeroViewController.m in Sources */,
 				BF9F22122570EAA200DD3F19 /* RJStackViewDemoViewController.m in Sources */,
+				BF07811725B9753F004C325E /* RJMultipleAccountSelectView.m in Sources */,
 				BF60E52B2574E13200E4F0A7 /* RJInterfaceActionRepresentationsSequenceView.m in Sources */,
 				BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */,
 				BF3524F6256CE093005E02C4 /* RJMainViewController.m in Sources */,
@@ -426,14 +447,17 @@
 				BFF4277B257893390014951A /* RJReactiveChainDemoViewController.m in Sources */,
 				BF60E5372574E6B000E4F0A7 /* RJAlertControllerActionView.m in Sources */,
 				BF879A6325778F7B008BDDCF /* UIImage+RJAlertViewControllerAdd.m in Sources */,
+				BF07811F25B9757D004C325E /* RJMultipleAccountSelectTableHeaderView.m in Sources */,
 				BFCF5B83257E2FE4009A3A86 /* RJVerifyCodeView.m in Sources */,
 				BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */,
 				BF60E5312574E69F00E4F0A7 /* RJInterfaceActionSeparatableSequenceView.m in Sources */,
+				BF07811225B96F14004C325E /* RJMultipleAccountView.m in Sources */,
 				BFF1D3F5257F6A9500B21412 /* RJVerifyCodePhoneSelectCell.m in Sources */,
 				BF7C3359257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m in Sources */,
 				BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */,
 				BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */,
 				BF27EC7225B9309B00D65058 /* RJProgressHUD.m in Sources */,
+				BF07811B25B97556004C325E /* RJMultipleAccountSelectCell.m in Sources */,
 				BF60E5162574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m in Sources */,
 				BF3524C9256CDF43005E02C4 /* main.m in Sources */,
 				BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */,

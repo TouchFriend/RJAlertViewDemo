@@ -1,32 +1,32 @@
 //
-//  RJVerifyCodePhoneSelectView.m
+//  RJMultipleAccountSelectView.m
 //  RJAlertViewDemo
 //
-//  Created by TouchWorld on 2020/12/8.
-//  Copyright © 2020 RJSoft. All rights reserved.
+//  Created by TouchWorld on 2021/1/21.
+//  Copyright © 2021 RJSoft. All rights reserved.
 //
 
-#import "RJVerifyCodePhoneSelectView.h"
-#import "RJVerifyCodePhoneSelectCell.h"
+#import "RJMultipleAccountSelectView.h"
+#import "RJMultipleAccountSelectCell.h"
 #import <Masonry/Masonry.h>
-#import "RJVerifyCodePhoneSelectTableHeaderView.h"
+#import "RJMultipleAccountSelectTableHeaderView.h"
 
-static NSString * const RJCellID = @"RJVerifyCodePhoneSelectCell";
+static NSString * const RJCellID = @"RJMultipleAccountSelectCell";
 static CGFloat const RJRowHeight = 40.0;
-static CGFloat const RJTableHeaderViewHeight = 30.0;
+static CGFloat const RJTableHeaderViewHeight = 40.0;
 
-@interface RJVerifyCodePhoneSelectView () <UITableViewDataSource, UITableViewDelegate>
+@interface RJMultipleAccountSelectView () <UITableViewDataSource, UITableViewDelegate>
 
 /// tableView
 @property (nonatomic, strong) UITableView *tableView;
 /// tableHeaderView
-@property (nonatomic, strong) RJVerifyCodePhoneSelectTableHeaderView *tableHeaderView;
+@property (nonatomic, strong) RJMultipleAccountSelectTableHeaderView *tableHeaderView;
 /// 选中行
 @property (nonatomic, assign, readwrite) NSInteger selectedRow;
 
 @end
 
-@implementation RJVerifyCodePhoneSelectView
+@implementation RJMultipleAccountSelectView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -64,7 +64,7 @@ static CGFloat const RJTableHeaderViewHeight = 30.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    RJVerifyCodePhoneSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:RJCellID forIndexPath:indexPath];
+    RJMultipleAccountSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:RJCellID forIndexPath:indexPath];
     NSString *phoneNumber = self.phoneNumbers[indexPath.row];
     [cell loadDataWithPhoneNumber:phoneNumber hideIcon:indexPath.row != self.selectedRow separatorLineHide:indexPath.row == self.phoneNumbers.count - 1];
     return cell;
@@ -110,14 +110,14 @@ static CGFloat const RJTableHeaderViewHeight = 30.0;
         _tableView.tableHeaderView = self.tableHeaderView;
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        [_tableView registerClass:[RJVerifyCodePhoneSelectCell class] forCellReuseIdentifier:RJCellID];
+        [_tableView registerClass:[RJMultipleAccountSelectCell class] forCellReuseIdentifier:RJCellID];
     }
     return _tableView;
 }
 
-- (RJVerifyCodePhoneSelectTableHeaderView *)tableHeaderView {
+- (RJMultipleAccountSelectTableHeaderView *)tableHeaderView {
     if (!_tableHeaderView) {
-        _tableHeaderView = [[RJVerifyCodePhoneSelectTableHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, 0.0, RJTableHeaderViewHeight)];
+        _tableHeaderView = [[RJMultipleAccountSelectTableHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, 0.0, RJTableHeaderViewHeight)];
     }
     return _tableHeaderView;
 }

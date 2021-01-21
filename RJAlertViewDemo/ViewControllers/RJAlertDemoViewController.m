@@ -10,6 +10,7 @@
 #import "RJAlertViewController.h"
 #import <Masonry/Masonry.h>
 #import "RJVerifyCodeView.h"
+#import "RJMultipleAccountView.h"
 
 @interface RJAlertDemoViewController ()
 
@@ -68,6 +69,37 @@
 }
 
 - (void)showAlertController {
+    [self showAccountSelectViewController];
+}
+
+- (void)showAccountSelectViewController {
+    NSArray *phoneNumbers = @[@"17746076231", @"17746076231", @"17746076231", @"17746076231", @"17746076231"];
+    RJMultipleAccountView *accountView = [[RJMultipleAccountView alloc] initWithPhoneNumbers:phoneNumbers];
+    RJAlertViewController *vc = [RJAlertViewController alertControllerWithTitle:@"提示" message:nil];
+    RJAlertAction *item1 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }];
+    RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"确定" handler:^(RJAlertAction * _Nonnull action) {
+        
+        
+    }];
+    RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
+        
+        
+    }];
+    [vc addActions:@[item1, item2]];
+    
+    UIView *contentView = [[UIView alloc] init];
+    [contentView addSubview:accountView];
+    [accountView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(contentView).insets(UIEdgeInsetsMake(15.0, 0.0, 10.0, 0.0));
+    }];
+    vc.contentView = contentView;
+        
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)showPhoneNumberSelectViewController {
     NSArray *phoneNumbers = @[@"17746076231", @"17746076231", @"17746076231", @"17746076231", @"17746076231"];
     RJVerifyCodeView *verifyCodeView = [[RJVerifyCodeView alloc] initWithPhoneNumbers:phoneNumbers];
     
