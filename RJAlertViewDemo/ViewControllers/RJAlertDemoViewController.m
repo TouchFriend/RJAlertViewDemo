@@ -80,6 +80,10 @@
             return;
         }
         
+        NSString *phoneNumber = verifyCodeView.selectedPhoneNumber;
+        NSString *verifyCode = verifyCodeView.getVerifyCode;
+        NSLog(@"%@--%@", phoneNumber, verifyCode);
+        
     }];
     RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
         

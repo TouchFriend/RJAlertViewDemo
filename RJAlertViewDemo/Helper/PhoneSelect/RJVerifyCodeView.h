@@ -17,6 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 检测数据是否输入完毕
 - (BOOL)checkDataInputCompleted;
 
+/// 获取选中的手机号
+- (NSString *_Nullable)selectedPhoneNumber;
+
+/// 获取验证码
+- (NSString *_Nullable)getVerifyCode;
+
 @end
 
 NS_ASSUME_NONNULL_END

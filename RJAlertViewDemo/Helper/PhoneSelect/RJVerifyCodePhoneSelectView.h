@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否选中
 - (BOOL)isSelected;
 
+/// 获取选中的手机号
+- (NSString *_Nullable)selectedPhoneNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

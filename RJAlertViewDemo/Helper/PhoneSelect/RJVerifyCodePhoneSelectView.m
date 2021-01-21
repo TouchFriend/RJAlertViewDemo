@@ -81,7 +81,15 @@ static CGFloat const RJTableHeaderViewHeight = 30.0;
 #pragma mark - Public Methods
 
 - (BOOL)isSelected {
-    return self.selectedRow != -1;
+    return self.selectedRow >= 0 && self.selectedRow < self.phoneNumbers.count;
+}
+
+- (NSString *)selectedPhoneNumber {
+    if (self.selectedRow < 0 || self.selectedRow >= self.phoneNumbers.count) {
+        return nil;
+    }
+    
+    return self.phoneNumbers[self.selectedRow];
 }
 
 #pragma mark - Property

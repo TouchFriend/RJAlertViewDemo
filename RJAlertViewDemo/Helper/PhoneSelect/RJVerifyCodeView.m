@@ -103,6 +103,14 @@
     return YES;
 }
 
+- (NSString *)selectedPhoneNumber {
+    return self.selectView.selectedPhoneNumber;
+}
+
+- (NSString *)getVerifyCode {
+    return self.codeTextF.text;
+}
+
 #pragma mark - Target
 
 - (void)codeBtnClick:(UIButton *)codeBtn {
@@ -135,6 +143,7 @@
         _codeTextF.textAlignment = NSTextAlignmentCenter;
         _codeTextF.borderStyle = UITextBorderStyleNone;
         _codeTextF.keyboardType = UIKeyboardTypeDefault;
+        _codeTextF.clearButtonMode = UITextFieldViewModeWhileEditing;
     }
     return _codeTextF;
 }
