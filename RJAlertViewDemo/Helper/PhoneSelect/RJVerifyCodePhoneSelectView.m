@@ -78,6 +78,12 @@ static CGFloat const RJTableHeaderViewHeight = 30.0;
     [tableView reloadData];
 }
 
+#pragma mark - Public Methods
+
+- (BOOL)isSelected {
+    return self.selectedRow != -1;
+}
+
 #pragma mark - Property
 
 - (UITableView *)tableView {

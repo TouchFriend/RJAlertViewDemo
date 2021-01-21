@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 标题
 @property (nullable, nonatomic, copy) NSString *title;
-/// 处理闭包
+/// 处理事件闭包
 @property (nonatomic, copy) void(^ __nullable handler)(RJAlertAction *action);
 
 + (instancetype)actionWithTitle:(nullable NSString *)title handler:(void (^ __nullable)(RJAlertAction *action))handler;

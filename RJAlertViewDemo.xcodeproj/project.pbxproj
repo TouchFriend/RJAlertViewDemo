@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97187949EB248CA2DC085448 /* Pods_RJAlertViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E527CC2319A59EE86FB15DC2 /* Pods_RJAlertViewDemo.framework */; };
+		BF27EC7225B9309B00D65058 /* RJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27EC7025B9309B00D65058 /* RJProgressHUD.m */; };
 		BF3524B8256CDF42005E02C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524B7256CDF42005E02C4 /* AppDelegate.m */; };
 		BF3524BE256CDF42005E02C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3524BD256CDF42005E02C4 /* ViewController.m */; };
 		BF3524C1256CDF42005E02C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3524BF256CDF42005E02C4 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		6EC19876DFD0ED44071BBD0C /* Pods-RJAlertViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJAlertViewDemo.release.xcconfig"; path = "Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BE5836C050B9D245E175D5D8 /* Pods-RJAlertViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJAlertViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-RJAlertViewDemo/Pods-RJAlertViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BF27EC7025B9309B00D65058 /* RJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJProgressHUD.m; sourceTree = "<group>"; };
+		BF27EC7125B9309B00D65058 /* RJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJProgressHUD.h; sourceTree = "<group>"; };
 		BF3524B3256CDF42005E02C4 /* RJAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3524B6256CDF42005E02C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF3524B7256CDF42005E02C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BF27EC6F25B9305300D65058 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				BF27EC7125B9309B00D65058 /* RJProgressHUD.h */,
+				BF27EC7025B9309B00D65058 /* RJProgressHUD.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		BF27EC7525B930D200D65058 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BF27EC7625B930EB00D65058 /* AccountSelect */,
+				BFCF5B80257E2F9C009A3A86 /* PhoneSelect */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BF27EC7625B930EB00D65058 /* AccountSelect */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountSelect;
+			sourceTree = "<group>";
+		};
 		BF3524AA256CDF42005E02C4 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +173,8 @@
 		BF3524B5256CDF42005E02C4 /* RJAlertViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF27EC7525B930D200D65058 /* Helper */,
+				BF27EC6F25B9305300D65058 /* General */,
 				BF6A28682578BB5100A96AF4 /* ReactiveChain */,
 				BF9F22002570A6D600DD3F19 /* AlertViewController */,
 				BF3524FA256CE098005E02C4 /* ViewControllers */,
@@ -164,7 +194,6 @@
 		BF3524FA256CE098005E02C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BFCF5B80257E2F9C009A3A86 /* Views */,
 				BFF0BABC2582253C000D71FC /* RJDeleteZeroViewController.h */,
 				BFF0BABD2582253C000D71FC /* RJDeleteZeroViewController.m */,
 				BF9F22102570EAA200DD3F19 /* RJStackViewDemoViewController.h */,
@@ -244,7 +273,7 @@
 			path = AlertViewController;
 			sourceTree = "<group>";
 		};
-		BFCF5B80257E2F9C009A3A86 /* Views */ = {
+		BFCF5B80257E2F9C009A3A86 /* PhoneSelect */ = {
 			isa = PBXGroup;
 			children = (
 				BFCF5B81257E2FE4009A3A86 /* RJVerifyCodeView.h */,
@@ -256,7 +285,7 @@
 				BFF1D3F7257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.h */,
 				BFF1D3F8257F6E2F00B21412 /* RJVerifyCodePhoneSelectTableHeaderView.m */,
 			);
-			path = Views;
+			path = PhoneSelect;
 			sourceTree = "<group>";
 		};
 		D280D08548937AE9C2374642 /* Frameworks */ = {
@@ -404,6 +433,7 @@
 				BF7C3359257F643C00BF9DB0 /* RJVerifyCodePhoneSelectView.m in Sources */,
 				BF60E51C2574E06000E4F0A7 /* RJInterfaceActionGroupHeaderScrollView.m in Sources */,
 				BF60E53D2574E6C300E4F0A7 /* RJInterfaceActionVibrantSeparatorView.m in Sources */,
+				BF27EC7225B9309B00D65058 /* RJProgressHUD.m in Sources */,
 				BF60E5162574E04B00E4F0A7 /* RJAlertControllerInterfaceActionGroupView.m in Sources */,
 				BF3524C9256CDF43005E02C4 /* main.m in Sources */,
 				BF9F22032570A6F100DD3F19 /* RJAlertViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 #import <RJKit/RJGCDTimer.h>
 #import "RJVerifyCodePhoneSelectView.h"
+#import "RJProgressHUD.h"
 
 @interface RJVerifyCodeView ()
 
@@ -86,6 +87,22 @@
     }];
 }
 
+#pragma mark - Public Methods
+
+- (BOOL)checkDataInputCompleted {
+    if (!self.selectView.isSelected) {
+        [RJProgressHUD showInfoWithStatus:@"请选择手机号"];
+        [RJProgressHUD dismissWithDelay:1.5];
+        return NO;
+    }
+    if (self.codeTextF.text.length == 0) {
+        [RJProgressHUD showInfoWithStatus:@"请输入验证码"];
+        [RJProgressHUD dismissWithDelay:1.5];
+        return NO;
+    }
+    return YES;
+}
+
 #pragma mark - Target
 
 - (void)codeBtnClick:(UIButton *)codeBtn {
@@ -117,7 +134,7 @@
         _codeTextF.font = [UIFont systemFontOfSize:16.0 weight:UIFontWeightRegular];
         _codeTextF.textAlignment = NSTextAlignmentCenter;
         _codeTextF.borderStyle = UITextBorderStyleNone;
-        _codeTextF.keyboardType = UIKeyboardTypeNumberPad;
+        _codeTextF.keyboardType = UIKeyboardTypeDefault;
     }
     return _codeTextF;
 }

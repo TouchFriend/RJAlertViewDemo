@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithPhoneNumbers:(NSArray *)phoneNumbers;
 
+/// 检测数据是否输入完毕
+- (BOOL)checkDataInputCompleted;
+
 @end
 
 NS_ASSUME_NONNULL_END

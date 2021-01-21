@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 手机号
 @property (nonatomic, strong) NSArray<NSString *> *phoneNumbers;
 
+/// 是否选中
+- (BOOL)isSelected;
+
 @end
 
 NS_ASSUME_NONNULL_END

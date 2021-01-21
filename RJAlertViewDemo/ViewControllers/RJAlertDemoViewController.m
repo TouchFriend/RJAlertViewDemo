@@ -68,20 +68,26 @@
 }
 
 - (void)showAlertController {
+    NSArray *phoneNumbers = @[@"17746076231", @"17746076231", @"17746076231", @"17746076231", @"17746076231"];
+    RJVerifyCodeView *verifyCodeView = [[RJVerifyCodeView alloc] initWithPhoneNumbers:phoneNumbers];
+    
     RJAlertViewController *vc = [RJAlertViewController alertControllerWithTitle:@"短信验证" message:nil];
     RJAlertAction *item1 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
     RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"确定" handler:^(RJAlertAction * _Nonnull action) {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        if (!verifyCodeView.checkDataInputCompleted) {
+            return;
+        }
+        
     }];
     RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
-
+        
+        
     }];
     [vc addActions:@[item1, item2]];
     
-    NSArray *phoneNumbers = @[@"17746076231", @"17746076231", @"17746076231"];
-    RJVerifyCodeView *verifyCodeView = [[RJVerifyCodeView alloc] initWithPhoneNumbers:phoneNumbers];
+    
     
     UIView *contentView = [[UIView alloc] init];
     [contentView addSubview:verifyCodeView];
