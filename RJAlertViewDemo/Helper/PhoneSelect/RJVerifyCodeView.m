@@ -111,6 +111,10 @@
     return self.codeTextF.text;
 }
 
+- (NSInteger)phoneSelectedRow {
+    return self.selectView.selectedRow;
+}
+
 #pragma mark - Target
 
 - (void)codeBtnClick:(UIButton *)codeBtn {

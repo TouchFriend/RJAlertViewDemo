@@ -22,7 +22,7 @@ static CGFloat const RJTableHeaderViewHeight = 30.0;
 /// tableHeaderView
 @property (nonatomic, strong) RJVerifyCodePhoneSelectTableHeaderView *tableHeaderView;
 /// 选中行
-@property (nonatomic, assign) NSInteger selectedRow;
+@property (nonatomic, assign, readwrite) NSInteger selectedRow;
 
 @end
 

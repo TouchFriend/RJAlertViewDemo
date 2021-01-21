@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RJVerifyCodeView : UIView
 
+/// 选中行
+@property (nonatomic, assign, readonly) NSInteger phoneSelectedRow;
+
 - (instancetype)initWithPhoneNumbers:(NSArray *)phoneNumbers;
 
 /// 检测数据是否输入完毕
