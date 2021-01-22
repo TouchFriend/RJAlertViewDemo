@@ -8,6 +8,7 @@
 
 #import "RJMultipleAccountSelectCell.h"
 #import <Masonry/Masonry.h>
+#import "RJAlertViewGlobalConst.h"
 
 @interface RJMultipleAccountSelectCell ()
 
@@ -39,14 +40,15 @@
     [self.contentView addSubview:self.iconImageV];
     [self.iconImageV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.contentView).mas_offset(20.0);
-        make.centerY.mas_equalTo(self.contentView);
+        make.top.mas_offset(15.0);
         make.size.mas_equalTo(CGSizeMake(14.0, 9.0));
     }];
     
     [self.contentView addSubview:self.titleLbl];
     [self.titleLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_offset(11.0);
+        make.bottom.mas_offset(-11.0);
         make.left.mas_equalTo(self.iconImageV.mas_right).mas_offset(10.0);
-        make.centerY.mas_equalTo(self.contentView);
         make.right.mas_lessThanOrEqualTo(self.contentView).mas_offset(-10.0);
     }];
     self.titleLbl.text = @"17746076351";
@@ -62,10 +64,19 @@
 
 #pragma mark - Public
 
-- (void)loadDataWithPhoneNumber:(NSString *)phoneNumber hideIcon:(BOOL)hideIcon separatorLineHide:(BOOL)separatorLineHide {
-    self.titleLbl.text = phoneNumber;
+- (void)loadDataWithAccount:(NSString *)account hideIcon:(BOOL)hideIcon separatorLineHide:(BOOL)separatorLineHide {
+    self.titleLbl.text = account;
     self.iconImageV.hidden = hideIcon;
     self.separatorLine.hidden = separatorLineHide;
+}
+
++ (CGFloat)calculateCellHeight:(NSString *)phoneNumber {
+    NSDictionary *attributes = @{
+        NSFontAttributeName : [UIFont systemFontOfSize:15.0 weight:UIFontWeightRegular],
+        NSForegroundColorAttributeName : [UIColor blackColor]
+    };
+    CGSize titleSize = [phoneNumber boundingRectWithSize:CGSizeMake(RJAlertViewControllerWidth - 54.0, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    return ceil(titleSize.height) + 22.0;
 }
 
 #pragma mark - Property
@@ -85,6 +96,7 @@
         _titleLbl.textColor = [UIColor blackColor];
         _titleLbl.font = [UIFont systemFontOfSize:15.0 weight:UIFontWeightRegular];
         _titleLbl.textAlignment = NSTextAlignmentLeft;
+        _titleLbl.numberOfLines = 0;
     }
     return _titleLbl;
 }

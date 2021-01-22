@@ -14,11 +14,12 @@
 
 @interface RJMultipleAccountView ()
 
-/// 手机号选择
+/// 账号选择
 @property (nonatomic, strong) RJMultipleAccountSelectView *selectView;
-/// 手机号
-@property (nonatomic, strong) NSArray<NSString *> *phoneNumbers;
-
+/// 账号
+@property (nonatomic, strong) NSArray<NSString *> *accounts;
+/// 用户名
+@property (nonatomic, copy) NSString *userName;
 
 @end
 
@@ -26,10 +27,11 @@
 
 #pragma mark - Init
 
-- (instancetype)initWithPhoneNumbers:(NSArray *)phoneNumbers {
+- (instancetype)initWithAccounts:(NSArray *)accounts userName:(NSString *)userName {
     self = [super init];
     if (self) {
-        self.phoneNumbers = phoneNumbers;
+        self.accounts = accounts;
+        self.userName = userName;
         [self setupInit];
     }
     return self;
@@ -40,14 +42,13 @@
 - (void)setupInit {
     self.backgroundColor = [UIColor whiteColor];
     
-    UIView *lastView = self;
-    if (self.phoneNumbers && self.phoneNumbers.count > 1) {
+    if (self.accounts && self.accounts.count > 1) {
         [self addSubview:self.selectView];
         [self.selectView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(self);
         }];
-        self.selectView.phoneNumbers = self.phoneNumbers;
-        lastView = self.selectView;
+        self.selectView.accounts = self.accounts;
+        self.selectView.userName = self.userName;
     }
 }
 
@@ -55,18 +56,18 @@
 
 - (BOOL)checkDataInputCompleted {
     if (!self.selectView.isSelected) {
-        [RJProgressHUD showInfoWithStatus:@"请选择手机号"];
+        [RJProgressHUD showInfoWithStatus:@"请选择需要登录的用户"];
         [RJProgressHUD dismissWithDelay:1.5];
         return NO;
     }
     return YES;
 }
 
-- (NSString *)selectedPhoneNumber {
-    return self.selectView.selectedPhoneNumber;
+- (NSString *)selectedAccount {
+    return self.selectView.selectedAccount;
 }
 
-- (NSInteger)phoneSelectedRow {
+- (NSInteger)accountSelectedRow {
     return self.selectView.selectedRow;
 }
 

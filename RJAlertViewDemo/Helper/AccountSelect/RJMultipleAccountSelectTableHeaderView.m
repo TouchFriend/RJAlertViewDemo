@@ -52,5 +52,10 @@
     return _titleLbl;
 }
 
+- (void)setUserName:(NSString *)userName {
+    _userName = userName;
+    self.titleLbl.text = [NSString stringWithFormat:@"用户 %@ 存在多个同名账号，请选择需要登录的用户", userName];
+}
+
 @end
 

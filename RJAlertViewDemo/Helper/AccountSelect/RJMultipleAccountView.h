@@ -13,15 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RJMultipleAccountView : UIView
 
 /// 选中行
-@property (nonatomic, assign, readonly) NSInteger phoneSelectedRow;
+@property (nonatomic, assign, readonly) NSInteger accountSelectedRow;
 
-- (instancetype)initWithPhoneNumbers:(NSArray *)phoneNumbers;
+- (instancetype)initWithAccounts:(NSArray *)accounts userName:(NSString *)userName;
 
 /// 检测数据是否输入完毕
 - (BOOL)checkDataInputCompleted;
 
-/// 获取选中的手机号
-- (NSString *_Nullable)selectedPhoneNumber;
+/// 获取选中的账号
+- (NSString *_Nullable)selectedAccount;
 
 @end
 

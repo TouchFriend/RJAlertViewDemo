@@ -73,18 +73,23 @@
 }
 
 - (void)showAccountSelectViewController {
-    NSArray *phoneNumbers = @[@"17746076231", @"17746076231", @"17746076231", @"17746076231", @"17746076231"];
-    RJMultipleAccountView *accountView = [[RJMultipleAccountView alloc] initWithPhoneNumbers:phoneNumbers];
+    NSArray *phoneNumbers = @[@"U006074 测试人事科/测试单位测试单位", @"U006074 测试人事科/测试单位", @"U006074 测试人事科/测试单位", @"U006074 测试人事科/测试单位"];
+    RJMultipleAccountView *accountView = [[RJMultipleAccountView alloc] initWithAccounts:phoneNumbers userName:@"cxzcxz"];
     RJAlertViewController *vc = [RJAlertViewController alertControllerWithTitle:@"提示" message:nil];
     RJAlertAction *item1 = [RJAlertAction actionWithTitle:@"取消" handler:^(RJAlertAction * _Nonnull action) {
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
     RJAlertAction *item2 = [RJAlertAction actionWithTitle:@"确定" handler:^(RJAlertAction * _Nonnull action) {
+        if (!accountView.checkDataInputCompleted) {
+            return;
+        }
         
-        
+        NSInteger selectedRow = accountView.accountSelectedRow;
+        NSString *account = accountView.selectedAccount;
+        NSLog(@"%ld--%@", selectedRow, account);
+        [self dismissViewControllerAnimated:YES completion:nil];
     }];
     RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
-        
         
     }];
     [vc addActions:@[item1, item2]];
@@ -116,7 +121,6 @@
         NSString *phoneNumber = verifyCodeView.selectedPhoneNumber;
         NSString *verifyCode = verifyCodeView.getVerifyCode;
         NSLog(@"%ld--%@--%@", selectedRow, phoneNumber, verifyCode);
-        
     }];
     RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
         

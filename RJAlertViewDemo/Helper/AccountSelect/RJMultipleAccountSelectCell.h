@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RJMultipleAccountSelectCell : UITableViewCell
 
-- (void)loadDataWithPhoneNumber:(NSString *)phoneNumber hideIcon:(BOOL)hideIcon separatorLineHide:(BOOL)separatorLineHide;
+- (void)loadDataWithAccount:(NSString *)phoneNumber hideIcon:(BOOL)hideIcon separatorLineHide:(BOOL)separatorLineHide;
+
++ (CGFloat)calculateCellHeight:(NSString *)phoneNumber;
 
 @end
 

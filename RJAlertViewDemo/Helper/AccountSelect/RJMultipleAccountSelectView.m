@@ -10,9 +10,9 @@
 #import "RJMultipleAccountSelectCell.h"
 #import <Masonry/Masonry.h>
 #import "RJMultipleAccountSelectTableHeaderView.h"
+#import "RJAccountSelectItem.h"
 
 static NSString * const RJCellID = @"RJMultipleAccountSelectCell";
-static CGFloat const RJRowHeight = 40.0;
 static CGFloat const RJTableHeaderViewHeight = 40.0;
 
 @interface RJMultipleAccountSelectView () <UITableViewDataSource, UITableViewDelegate>
@@ -23,6 +23,9 @@ static CGFloat const RJTableHeaderViewHeight = 40.0;
 @property (nonatomic, strong) RJMultipleAccountSelectTableHeaderView *tableHeaderView;
 /// 选中行
 @property (nonatomic, assign, readwrite) NSInteger selectedRow;
+/// <#Desription#>
+@property (nonatomic, strong) NSMutableArray<RJAccountSelectItem *> *accountInfos;
+
 
 @end
 
@@ -60,13 +63,13 @@ static CGFloat const RJTableHeaderViewHeight = 40.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.phoneNumbers.count;
+    return self.accountInfos.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     RJMultipleAccountSelectCell *cell = [tableView dequeueReusableCellWithIdentifier:RJCellID forIndexPath:indexPath];
-    NSString *phoneNumber = self.phoneNumbers[indexPath.row];
-    [cell loadDataWithPhoneNumber:phoneNumber hideIcon:indexPath.row != self.selectedRow separatorLineHide:indexPath.row == self.phoneNumbers.count - 1];
+    RJAccountSelectItem *infoItem = self.accountInfos[indexPath.row];
+    [cell loadDataWithAccount:infoItem.account hideIcon:indexPath.row != self.selectedRow separatorLineHide:indexPath.row == self.accounts.count - 1];
     return cell;
 }
 
@@ -78,18 +81,23 @@ static CGFloat const RJTableHeaderViewHeight = 40.0;
     [tableView reloadData];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    RJAccountSelectItem *infoItem = self.accountInfos[indexPath.row];
+    return infoItem.cellHeight;
+}
+
 #pragma mark - Public Methods
 
 - (BOOL)isSelected {
-    return self.selectedRow >= 0 && self.selectedRow < self.phoneNumbers.count;
+    return self.selectedRow >= 0 && self.selectedRow < self.accounts.count;
 }
 
-- (NSString *)selectedPhoneNumber {
-    if (self.selectedRow < 0 || self.selectedRow >= self.phoneNumbers.count) {
+- (NSString *)selectedAccount {
+    if (self.selectedRow < 0 || self.selectedRow >= self.accounts.count) {
         return nil;
     }
     
-    return self.phoneNumbers[self.selectedRow];
+    return self.accounts[self.selectedRow];
 }
 
 #pragma mark - Property
@@ -101,7 +109,6 @@ static CGFloat const RJTableHeaderViewHeight = 40.0;
         _tableView.estimatedRowHeight = 0.0;
         _tableView.estimatedSectionHeaderHeight = 0.0;
         _tableView.estimatedSectionFooterHeight = 0.0;
-        _tableView.rowHeight = RJRowHeight;
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -122,14 +129,37 @@ static CGFloat const RJTableHeaderViewHeight = 40.0;
     return _tableHeaderView;
 }
 
-- (void)setPhoneNumbers:(NSArray<NSString *> *)phoneNumbers {
-    _phoneNumbers = phoneNumbers;
+- (void)setAccounts:(NSArray<NSString *> *)accounts {
+    _accounts = accounts;
+    [self.accountInfos removeAllObjects];
+    
+    CGFloat height = 0.0;
+    for (NSString *account in accounts) {
+        RJAccountSelectItem *item = [[RJAccountSelectItem alloc] init];
+        item.account = account;
+        CGFloat cellHeight = [RJMultipleAccountSelectCell calculateCellHeight:account];
+        item.cellHeight = cellHeight;
+        [self.accountInfos addObject:item];
+        height += cellHeight;
+    }
     self.selectedRow = -1;
-    CGFloat height = phoneNumbers.count * RJRowHeight + RJTableHeaderViewHeight;
+    height += RJTableHeaderViewHeight;
     [self mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(height);
     }];
     [self.tableView reloadData];
+}
+
+- (NSMutableArray<RJAccountSelectItem *> *)accountInfos {
+    if (!_accountInfos) {
+        _accountInfos = [NSMutableArray array];
+    }
+    return _accountInfos;
+}
+
+- (void)setUserName:(NSString *)userName {
+    _userName = userName;
+    self.tableHeaderView.userName = userName;
 }
 
 @end

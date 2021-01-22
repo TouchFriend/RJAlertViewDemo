@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RJMultipleAccountSelectView : UIView
 
 /// 手机号
-@property (nonatomic, strong) NSArray<NSString *> *phoneNumbers;
+@property (nonatomic, strong) NSArray<NSString *> *accounts;
+/// 用户名
+@property (nonatomic, copy) NSString *userName;
 /// 选中行
 @property (nonatomic, assign, readonly) NSInteger selectedRow;
 
@@ -21,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isSelected;
 
 /// 获取选中的手机号
-- (NSString *_Nullable)selectedPhoneNumber;
+- (NSString *_Nullable)selectedAccount;
 
 @end
 

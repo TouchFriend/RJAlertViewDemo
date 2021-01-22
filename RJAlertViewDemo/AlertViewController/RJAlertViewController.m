@@ -10,6 +10,7 @@
 #import "RJAlertControllerInterfaceActionGroupView.h"
 #import <Masonry/Masonry.h>
 #import "RJAlertViewConst.h"
+#import "RJAlertViewGlobalConst.h"
 
 @interface RJAlertViewController ()
 
@@ -49,7 +50,7 @@
     [self.view addSubview:actionGroupView];
     [actionGroupView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(self.view);
-        make.width.mas_equalTo(270.0);
+        make.width.mas_equalTo(RJAlertViewControllerWidth);
     }];
 }
 

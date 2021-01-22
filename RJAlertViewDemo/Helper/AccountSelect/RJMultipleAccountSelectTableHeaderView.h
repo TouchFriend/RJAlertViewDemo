@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RJMultipleAccountSelectTableHeaderView : UIView
 
+/// 用户名
+@property (nonatomic, copy) NSString *userName;
+
 @end
 
 NS_ASSUME_NONNULL_END
