@@ -65,11 +65,12 @@
 
 - (void)openBtnClick {
     [self showAlertController];
-//    [self showPhoneNumberValidView];
+    
 }
 
 - (void)showAlertController {
     [self showAccountSelectViewController];
+//    [self showPhoneNumberSelectViewController];
 }
 
 - (void)showAccountSelectViewController {
@@ -88,9 +89,6 @@
         NSString *account = accountView.selectedAccount;
         NSLog(@"%ld--%@", selectedRow, account);
         [self dismissViewControllerAnimated:YES completion:nil];
-    }];
-    RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
-        
     }];
     [vc addActions:@[item1, item2]];
     
@@ -122,13 +120,7 @@
         NSString *verifyCode = verifyCodeView.getVerifyCode;
         NSLog(@"%ld--%@--%@", selectedRow, phoneNumber, verifyCode);
     }];
-    RJAlertAction *item3 = [RJAlertAction actionWithTitle:@"关闭" handler:^(RJAlertAction * _Nonnull action) {
-        
-        
-    }];
     [vc addActions:@[item1, item2]];
-    
-    
     
     UIView *contentView = [[UIView alloc] init];
     [contentView addSubview:verifyCodeView];
@@ -140,7 +132,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)showPhoneNumberValidView {
+- (void)showAlertViewTest {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"title" message:@"message" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         

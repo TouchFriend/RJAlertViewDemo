@@ -118,6 +118,16 @@
 #pragma mark - Target
 
 - (void)codeBtnClick:(UIButton *)codeBtn {
+    if (!self.selectView.isSelected) {
+        [RJProgressHUD showInfoWithStatus:@"请选择手机号"];
+        [RJProgressHUD dismissWithDelay:1.5];
+        return;
+    }
+    
+    [self startTimer];
+}
+
+- (void)startTimer {
     __weak typeof(self) weakSelf = self;
     [self.timer startTimerWithBeginTime:60 endTime:0 beginBlock:^{
         NSLog(@"定时器开始");
